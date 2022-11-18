@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+  body{
+    background-color: #343440;
+    color:  #fff;
+    font-size: 16px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+/*Eslilizado de el menu */
+.contenedor-menu{
+    width: 95%;
+    margin: auto;
+    
+}
+
+header {
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    opacity: 75%;
+  }
+
+
+.nav-principal{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-principal a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.nav-principal ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-principal ul li{
+    padding: 10px;
+}
+
+.nav-principal a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-logo{
+    width: 100px;
+    margin: 0;
+    
+}
+
+
+
+/*estilizar el contenedor principal*/
+section{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/señas.jpg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-principal{
+    display: flex;
+    background: #0a0a0a;
+    border-radius: 0.5rem;
+    padding: 3%;
+    opacity: 80%;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Estilizando el contenedor del slogan */
+.slogan{
+    flex: 1;
+    margin-left: 10%;
+}
+
+
+.slogan h2{
+    font-size: 6em;
+    text-align: center;
+    line-height: 1.5;
+    color: #5BC1E6;
+}
+
+.slogan p{
+    font-size: 250%;
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.slogan p:nth-child(3){
+    font-size: 300%;
+    margin-top: 5%;
+    text-align: left;
+    color: #5BC1E6;
+}
+
+/* Contenedor de forma*/
+.contenedor-forma{
+    flex: 1;
+    margin-top: 5%;
+    padding-left: 15%;
+}
+
+/*Posicion de mensaje*/
+.forma {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 70%;
+}
+
+/*forma y animacion de la primera forma*/
+.forma span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 35% 65% 67% 36% / 45% 46% 58% 62%;
+    animation: animate 6s linear infinite;
+}
+/*color de la primera forma*/
+.forma:hover span:nth-child(1){
+    border: none;
+    background: -webkit-linear-gradient(90deg, #6f31eb,#00a0ff, #aedae6);
+    background: linear-gradient(90deg, #6f31eb, #00a0ff, #aedae6);
+}
+
+/*forma y animacion  de la segunda forma*/
+.forma span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 35% 65% 67% 36% / 45% 46% 58% 62%;
+    animation: animate 4s linear infinite;
+}
+/*color de la segunda forma*/
+.forma:hover span:nth-child(2){
+    border: none;
+    background: -webkit-linear-gradient(90deg, #6f31eb,#00a0ff, #aedae6);
+    background: linear-gradient(90deg, #6f31eb, #00a0ff, #aedae6);
+}
+
+/*forma y animacion  de la tercera forma*/
+.forma span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 35% 65% 67% 36% / 45% 46% 58% 62%;
+    animation: animate2 11s linear infinite;
+}
+/*color de la tercera forma*/
+.forma:hover span:nth-child(3){
+    border: none;
+    background: -webkit-linear-gradient(90deg, #41a8bf,#a044c1, #6f1fbf);
+    background: linear-gradient(90deg,  #41a8bf,#a044c1, #6f1fbf);
+}
+
+/*Rotacion de formas */
+@keyframes animate {
+    0%{ 
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.content {
+    z-index: 99999999;
+    position: relative;
+    color: #fff;
+    text-align: center;
+  }
+
+  .content a {
+    position: relative;
+    display: flex;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 75% 20% 42% 65% / 55% 43% 58% 57%;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+  }
+
+  .content a:hover {
+    background: rgb(241, 241, 241);
+    color: #000;
+  }
+
+  .content p {
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+
+  /* estilizando la seccion Nosotros */
+  .nosotros{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/discapacidad.jpg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.contenedor-nosotros{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background:rgb(51, 50, 50);
+    border-radius: 0.5rem;
+    padding: 3%;
+    opacity: 95%;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-nosotros .col{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    padding: 1em;
+}
+.contenedor-nosotros .fila{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+
+}
+
+.img-nosotros{
+    width: 25em;
+    height: 15em;
+    
+}
+
+.nosotros h2{
+    font-size: 3em;
+    text-align: right;
+    color: #5BC1E6;
+}
+
+.nosotros h4{
+    font-size: 2em;
+    text-align: justify;
+}
+.nosotros p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+
+
+
+
+/* estilizando la seccion de contacto */
+
+.contacto{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/Lengua_señas.jpg") top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.contenedor-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:rgb(51, 50, 50);
+    border-radius: 0.5rem;
+    padding: 1%;
+    opacity: 95%;
+    width: 100%;
+    height: 100%;
+}
+
+.correo{
+    position: absolute;
+
+}
+
+.contacto h4{
+  font-size: 3em;
+  text-align: center;
+  color: #5BC1E6;
+
+}
+
+.contacto p{
+  font-size: 1em;
+  text-align: justify;
+}
+
+.boton {
+  position: relative;
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.boton span {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+}
+
+.boton .liquido {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #ff4949;
+  box-shadow: inset 0 0 50px rgba(179, 175, 175, 0.5);
+  transition: .5s;
+}
+
+.boton .liquido::after,
+.boton .liquido::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: rgb(204, 198, 198);
+}
+
+.boton .liquido::before {
+  
+  border-radius: 45%;
+  background: rgb(180, 176, 176);
+  animation: animateb 5s linear infinite;
+}
+
+.boton .liquido::after {
+  
+  border-radius: 40%;
+  background: rgba(196, 195, 195, 0.5);
+  animation: animateb 10s linear infinite;
+}
+
+.boton:hover .liquid{
+  top: -120px;
+}
+
+@keyframes animateb {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.contacto ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display:flex;
+    margin:0;
+    padding:0;
+  }
+  
+  .contacto ul li {
+    list-style:none;
+    margin:0 5px;
+  }
+  
+  .contacto ul li a .fa {
+    font-size: 40px;
+    color: #262626;
+    line-height:80px;
+    transition: .5s;
+    padding-right: 14px;
+  }
+  
+  .contacto ul li a span {
+    padding:0;
+    margin:0;
+    position:absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: .5s;
+  }
+  
+  .contacto ul li a {
+    text-decoration: none;
+    display:absolute;
+    display:block;
+    width:210px;
+    height:80px;
+    background: #fff;
+    text-align:left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition:.5s;
+    box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  }
+
+  .contacto ul li a:before {
+    content: '';
+    position: absolute;
+    top:10px;
+    left:-20px;
+    height:100%;
+    width:20px;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  
+  .contacto  ul li a:after {
+    content: '';
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    height:20px;
+    width:100%;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  .contacto ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+    box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  }
+  
+  .contacto ul li:hover .fa {
+    color:#fff;
+  }
+  
+  .contacto ul li:hover span {
+    color:#fff;
+  }
+  
+  .contacto ul li:hover:nth-child(1) a{
+    background: #3b5998;
+  }
+  .contacto ul li:hover:nth-child(1) a:before{
+    background: #365492;
+  }
+  .contacto ul li:hover:nth-child(1) a:after{
+    background: #4a69ad;
+  }
+  
+  .contacto ul li:hover:nth-child(2) a{
+    background: #00aced;
+  }
+  .contacto ul li:hover:nth-child(2) a:before{
+    background: #097aa5;
+  }
+  .contacto ul li:hover:nth-child(2) a:after{
+    background: #53b9e0;
+  }
+  
+  .contacto ul li:hover:nth-child(3) a{
+    background: #dd4b39;
+  }
+  .contacto  ul li:hover:nth-child(3) a:before{
+    background: #b33a2b;
+  }
+  .contacto ul li:hover:nth-child(3) a:after{
+    background: #e66a5a;
+  }
+  
+  .contacto  ul li:hover:nth-child(4) a{
+    background: #e4405f;
+  }
+  .contacto ul li:hover:nth-child(4) a:before{
+    background: #d81c3f;
+  }
+  .contacto  ul li:hover:nth-child(4) a:after{
+    background: #e46880;
+  }
+
+  footer h4, p{
+    text-align: center;
+  }
